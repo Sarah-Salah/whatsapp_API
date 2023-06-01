@@ -70,4 +70,8 @@ app.post('/webhook', (req, res) => {
 
 
     }
-}
+});
+
+app.get('/', (req, res) => {
+    res.status(200).send('Hello world, I am a chat bot')
+});
